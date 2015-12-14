@@ -258,9 +258,9 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
                 	 return 'c'
 	
 	elif player == 10:
-        if getting_team_name:
-            return 'playerrrrr'
-        else:
+		 if getting_team_name:
+        		 return 'playerrrrr'
+	 else:
             if len(opponent_history) == 0:
                 return 'b'
             elif opponent_history[-1] == 'c' and random.choice([True, True, False]):
@@ -269,7 +269,27 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
                 return 'c'
             else:
                 return 'b'
-	   
+	  
+	elif player == 10:
+    		if getting_team_name:
+        		return 'MLG'
+		else:
+			if random.randint(2) < 2:
+				return 'c'
+			else:
+				return 'b'
+            
+	elif player == 11:
+		if getting_team_name:
+			return 'Gabe McMahon'
+		else:
+			return 'c'
+        
+        elif player == 12:
+        	if getting_team_name:
+        		return 'yah mum'
+        	else:
+        		return 'c'
 
 
 def play_tournament(num_players):
